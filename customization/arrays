@@ -1,0 +1,7 @@
+-> jsx can render arrays ex.
+    const template= <div>
+             {[12, 13, 14, 'some', undefine, true, null]}
+->jsx can render jsx inside jsx ex.
+const template= <div>
+             {<h1>test</h1>}
+->jsx can render array of jsx 

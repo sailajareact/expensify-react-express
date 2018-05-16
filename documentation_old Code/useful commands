@@ -1,0 +1,134 @@
+
+babel customization/es6-cont-let-datatypes.js --out-file=public/scripts/app.js
+
+babel customization/es6-cont-let-datatypes.js --out-file=public/scripts/app.js --watch
+
+babel src/app.js --out-file=public/scripts/app.js
+
+---> to add presets in package file 
+yarn add babel-preset-env@1.5.2 babel-preset-react@6.24.1 babel
+-->to run js file in browser
+live-server file(which is related to html)
+
+
+--> intital trnsroming of the file to react
+>babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+
+-->removing global installed dependencies and adding into locally
+if add to yarn try this: yarn global remove babel-cli live-server
+or add to npm try this: npm uninstall -g babel-cli live-server
+
+adding locally: yarn add live-server babel-cli@6.24.1
+
+--> to run the scripts which r created as aliase of our commands to live-server and babel
+yarn run serve(script name)
+
+-->installing webpack tool locally
+yarn add webpack@3.1.0
+
+
+--> after installing webpack and creating the webpack.config.js file run these commands 
+->to show up the application in browser
+to build the application in webpack: yarn run build
+to watch the build file for changes: yarn run build --watch
+to deploy in in server: yarn run serve
+
+-->install npm validator
+yarn add validator@8.0.0
+
+--> install react to the npm
+yarn add react@15.6.1 react-dom@15.6.1
+
+--> install babel core in the npm 
+yarn add babel-core@6.25.0 babel-loader@7.1.1
+
+-->install webpack devserver 
+yarn add webpack-dev-server@2.5.1
+
+-->install plugin to transform the class properties
+yarn add babel-plugin-transform-class-properties@6.24.1
+
+-->install and use third party libraries to function like date picker,
+alert and choosing 
+yarn add react-modal@2.2.2
+
+-->install css and style to config webpack
+yarn add style-loader@0.18.2 css-loader@0.28.4
+
+-->install sass/sass loaders/libraries to webpack to convert scss to css and use them in js files
+yarn add sass-loader@6.0.6 node-sass@4.5.3
+
+--> install normalize css to reset code
+yarn add normalize.css@7.0.0
+
+yarn add react-router-dom@4.2.2
+
+------------------------> Redux <---------------------------------
+yarn add redux@3.7.2
+
+----> for redux documentation follow these links---------
+https://github.com/reactjs/redux
+https://redux.js.org/basics/reducers
+
+---> to create unique id install npm uuid
+yarn add uuid@3.1.0
+
+---> to use object spread operator install babel plug in
+yarn add babel-plugin-transform-object-rest-spread@6.23.0
+
+---------> react redux provider to to connect react component
+to redux store<-----------------------------
+yarn add react-redux@5.0.5
+
+----> for the date picker--
+https://github.com/airbnb/react-dates
+
+http://airbnb.io/react-dates
+yarn add moment@2.18.1 react-dates@12.7.0 react-addons-shallow-compare@15.6.0
+
+--> install jest to test the application
+yarn add jest@20.0.4
+--to run this command
+yarn run test --after creating test script in package,json
+
+-->to run the render methods/dom use snap shot
+yarn add react-test-renderer@15.6.1
+
+----->enzyme test utility ------------
+yarn add enzyme@3.0.0 enzyme-adapter-react-16@1.0.0 raf@3.3.2
+yarn add enzyme-to-json@3.0.1
+
+
+------>git repository------------------------
+command from ur root folder i.e. from the expensify-enzyme-application
+---to initialize i.e. creating .git at the end of application
+git init
+git status --will give the status of the project at certain point of time
+git add ---will add to the repositry
+git add .  ---will add all the files to the git repositry
+git comit -m "intial comit" ---will comit to th repositry and wil track the files
+
+github with visual studio
+https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/step-by-step-working-with-github-repository-and-visual-studio-2015
+
+
+--------------->webpack production---------
+yarn run build:prod
+
+----> to wrap up the styles files in styles folder
+yarn add extract-text-webpack-plugin@3.0.0
+
+
+-----------> express server <--------------------
+yarn add express@4.15.4
+
+----->to run the app on server 
+node server/server.js
+
+------>heroku is web deployment server to deploy app to web and it'll give
+u the ready to use url of your app. once install the heroku cli check the version
+heroku --version
+
+---> to authonticate
+heroku login
+

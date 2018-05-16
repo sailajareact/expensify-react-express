@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Expensify APP
+</h1>,
+        <NavLink
+          activeClassName="link-font"
+          ariaCurrent="true"
+          exact={true}
+          to="/"
+>
+          DashBoard
+</NavLink>,
+        <NavLink
+          activeClassName="link-font"
+          ariaCurrent="true"
+          to="/create"
+>
+          Create Expense
+</NavLink>,
+        <NavLink
+          activeClassName="link-font"
+          ariaCurrent="true"
+          to="/edit"
+>
+          Edit Expense
+</NavLink>,
+        <NavLink
+          activeClassName="link-font"
+          ariaCurrent="true"
+          to="/help"
+>
+          help
+</NavLink>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Expensify APP",
+        },
+        "ref": null,
+        "rendered": "Expensify APP",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "link-font",
+          "ariaCurrent": "true",
+          "children": "DashBoard",
+          "exact": true,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "DashBoard",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "link-font",
+          "ariaCurrent": "true",
+          "children": "Create Expense",
+          "to": "/create",
+        },
+        "ref": null,
+        "rendered": "Create Expense",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "link-font",
+          "ariaCurrent": "true",
+          "children": "Edit Expense",
+          "to": "/edit",
+        },
+        "ref": null,
+        "rendered": "Edit Expense",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "link-font",
+          "ariaCurrent": "true",
+          "children": "help",
+          "to": "/help",
+        },
+        "ref": null,
+        "rendered": "help",
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Expensify APP
+</h1>,
+          <NavLink
+            activeClassName="link-font"
+            ariaCurrent="true"
+            exact={true}
+            to="/"
+>
+            DashBoard
+</NavLink>,
+          <NavLink
+            activeClassName="link-font"
+            ariaCurrent="true"
+            to="/create"
+>
+            Create Expense
+</NavLink>,
+          <NavLink
+            activeClassName="link-font"
+            ariaCurrent="true"
+            to="/edit"
+>
+            Edit Expense
+</NavLink>,
+          <NavLink
+            activeClassName="link-font"
+            ariaCurrent="true"
+            to="/help"
+>
+            help
+</NavLink>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Expensify APP",
+          },
+          "ref": null,
+          "rendered": "Expensify APP",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "link-font",
+            "ariaCurrent": "true",
+            "children": "DashBoard",
+            "exact": true,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "DashBoard",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "link-font",
+            "ariaCurrent": "true",
+            "children": "Create Expense",
+            "to": "/create",
+          },
+          "ref": null,
+          "rendered": "Create Expense",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "link-font",
+            "ariaCurrent": "true",
+            "children": "Edit Expense",
+            "to": "/edit",
+          },
+          "ref": null,
+          "rendered": "Edit Expense",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "link-font",
+            "ariaCurrent": "true",
+            "children": "help",
+            "to": "/help",
+          },
+          "ref": null,
+          "rendered": "help",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
