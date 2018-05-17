@@ -132,3 +132,11 @@ heroku --version
 ---> to authonticate
 heroku login
 
+delpoyed url
+https://react-expensify-server.herokuapp.com/
+
+--------->to wrap up dependencies
+yarn add chalk --dev
+
+--->to run production dependencies
+yarn install --production
