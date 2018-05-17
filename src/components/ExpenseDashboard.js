@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import Link from 'react-router-dom';
 import ExpenseList from './ExpenseList';
 import ExpenseListFilters from './ExpenseListFilters';
+import ExpensesSummary from './ExpensesSummary';
 
 // // for testing
 // const filters = {text: 'water',
@@ -13,6 +14,7 @@ import ExpenseListFilters from './ExpenseListFilters';
 const ExpenseDashboard=()=>(
     <div>
     <h1>this's from Expense dash board page</h1>
+    <ExpensesSummary />
     <ExpenseListFilters />
     <ExpenseList />
     </div>

@@ -140,3 +140,11 @@ yarn add chalk --dev
 
 --->to run production dependencies
 yarn install --production
+
+
+---> numeral dep
+yarn add numeral@2.0.6
+
+
+----------------->firbase is nosql database<--------------------
+yarn add firbase@4.2.0
