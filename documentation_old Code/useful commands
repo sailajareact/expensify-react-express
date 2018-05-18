@@ -108,6 +108,32 @@ git add ---will add to the repositry
 git add .  ---will add all the files to the git repositry
 git comit -m "intial comit" ---will comit to th repositry and wil track the files
 
+-------->in git bash<--------
+https://help.github.com/articles/connecting-to-github-with-ssh/
+to check the existing ssh keys
+ls -a ~/.ssh
+
+to generate new keys
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+ensuring ssh-agent is running
+eval $(ssh-agent -s)
+
+add ssh private key to ssh-agent
+ssh-add ~/.ssh/id_rsa
+
+once add the ssh key to github , check the authontication
+ssh -T git@github.com
+
+to add remote git repository
+git remote add origin git@github.com:sailajareact/expensify-react-express.git
+
+git remote -->to check origin added or not
+git remote -v --> to check the fetch and push urls
+
+git push -u origin master --> to push local sys code to git repo for the "1st time"
+
+
 github with visual studio
 https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/step-by-step-working-with-github-repository-and-visual-studio-2015
 
