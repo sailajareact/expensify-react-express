@@ -132,7 +132,7 @@ git remote -->to check origin added or not
 git remote -v --> to check the fetch and push urls
 
 git push -u origin master --> to push local sys code to git repo for the "1st time"
-
+git push --> to commit and push our new code to github
 
 github with visual studio
 https://www.infragistics.com/community/blogs/b/dhananjay_kumar/posts/step-by-step-working-with-github-repository-and-visual-studio-2015
@@ -157,6 +157,11 @@ heroku --version
 
 ---> to authonticate
 heroku login
+
+--for existing git repositories
+heroku git:remote -a expensify-react-heroku
+
+git push heroku master
 
 delpoyed url
 https://react-expensify-server.herokuapp.com/
