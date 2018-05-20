@@ -1,22 +1,29 @@
- import uuid from 'uuid';
+import uuid from 'uuid';
+import {firebase, database} from '../firebase/firebase'
 
 // creating action generator for add expense
-const addExpense = ({
-    description = '',
-    note = '',
-    amount = 0,
-    createdAt = 0
-} = {}) => {
+const addExpense = (expense) => {
     return ({
         type: 'ADD_EXPENSE',
-        expense: {
-            id: uuid(),
-            description,
-            note,
-            amount,
-            createdAt
-        }
+        expense
     })
+}
+
+export const startAddExpense = (expenseData = {}) => {
+    return (dispach) => {
+    const { description = '',
+        note = '',
+        amount = 0,
+        createdAt = 0 } = expenseData;
+        const expense = {description, note, amount, createdAt}
+
+        firebase.database().ref('expenses').push(expense).then((ref) => {
+            dispach(addExpense({
+                id: ref.key,
+                ...expense
+            }))
+        })
+    }
 }
 
 export const removeExpense = (id) => ({
@@ -31,4 +38,4 @@ export const editExpense = (id, updates) => ({
     updates
 })
 
-export {addExpense};
+export { addExpense };

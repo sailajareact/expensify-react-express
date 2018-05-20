@@ -11,18 +11,19 @@ import './styles/style.scss'
 import 'react-dates/lib/css/_datepicker.css'
 import AppRouter from './router/AppRouter'
 import './firebase/firebase';
+import '../customization/es6-promises';
 
 const store = configureStore();
 
 console.log('test sourc maps')
 
-// dispach add expense action to the store
-// addExpense({ description: 'Water bill' })
-store.dispatch(addExpense({description: 'Water bll', amount: 300}))
-store.dispatch(addExpense({description: 'power bill'}))
-store.dispatch(addExpense({description: 'gas'}))
-// store.dispatch(setTextFilter({text: 'bi'}))
-console.log(store.getState());
+// // dispach add expense action to the store
+// // addExpense({ description: 'Water bill' })
+// store.dispatch(addExpense({description: 'Water ', amount: 300}))
+// store.dispatch(addExpense({description: 'power bill'}))
+// store.dispatch(addExpense({description: 'gas'}))
+// // store.dispatch(setTextFilter({text: 'bi'}))
+// console.log(store.getState());
 
 // setTimeout(() => {
 //   store.dispatch(setTextFilter({text: 'bi'}))

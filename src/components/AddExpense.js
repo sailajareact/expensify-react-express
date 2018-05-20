@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'react-router-dom'
 import {connect} from 'react-redux'
 import ExpenseForm from './ExpenseForm'
-import {addExpense} from '../actions/expenses'
+import {startAddExpense} from '../actions/expenses'
 
 
 const AddExpense=(props)=>(
@@ -10,7 +10,7 @@ const AddExpense=(props)=>(
     <p>add expense page</p>
     <ExpenseForm onExpenseSubmit={(expense)=>{
         console.log(expense)
-        props.dispatch(addExpense(expense));
+        props.dispatch(startAddExpense(expense));
         props.history.push('/')
     }}/>
     </div>

@@ -162,8 +162,10 @@ heroku login
 heroku git:remote -a expensify-react-heroku
 
 git push heroku master
+heroku logs --to get the error log of heroku
 
-delpoyed url
+delpoyed urls:
+https://expensify-react-heroku.herokuapp.com/
 https://react-expensify-server.herokuapp.com/
 
 --------->to wrap up dependencies
@@ -179,3 +181,10 @@ yarn add numeral@2.0.6
 
 ----------------->firbase is nosql database<--------------------
 yarn add firbase@4.2.0
+
+------------->redux-thunk is a middleware to return func from action-------
+yarn add redux-thunk@2.2.0
+https://stackoverflow.com/questions/35411423/how-to-dispatch-a-redux-action-with-a-timeout/35415559#35415559
+
+--->to create mock db for testing----
+yarn add redux-mock-store@1.2.3
